@@ -1,5 +1,13 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { addTostoreDB } from '../../Comopenets/Utility/addToDB';
+
+
+
+
+
+
+
 
 const BookDetails = () => {
     const data =useLoaderData();
@@ -7,7 +15,12 @@ const BookDetails = () => {
     const prasints = parseInt(booId);
     const singeldata  = data.find(book=> book.bookId === prasints)
 //    console.log(singeldata)
-const {image,bookName,author,tags,review,category,totalPages,yearOfPublishing,rating,publisher}=singeldata
+const {image,bookName,author,tags, bookId,review,category,totalPages,yearOfPublishing,rating,publisher}=singeldata
+
+const heandeleMArks =id =>{
+
+    addTostoreDB(id);
+}
     return (
         <div className='md:w-300 md:mx-auto mt-10 shadow-md '>
           <div className="hero">
@@ -55,8 +68,8 @@ const {image,bookName,author,tags,review,category,totalPages,yearOfPublishing,ra
        
      </div>
      <div className='flex gap-3 mt-3'>
-                <button className="btn ">Read</button>
-            <button className="btn ">Wishlist</button>
+                <button onClick={()=>heandeleMArks(bookId)} className="btn ">Read</button>
+            <button  className="btn ">Wishlist</button>
            
      </div>
      

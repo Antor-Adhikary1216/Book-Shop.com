@@ -10,6 +10,7 @@ import ListedBooks from '../Pages/ListedBooks/ListedBooks';
 import PageToRead from '../Pages/PageToRead/PageToRead';
 import BookDetails from '../Pages/BookDetails/BookDetails';
 import SingUp from '../Pages/SinUp/SingUp';
+import Sinin from '../Pages/sinin/Sinin';
 
 export const route = createBrowserRouter([
     { path:"/",Component:Root
@@ -42,6 +43,10 @@ export const route = createBrowserRouter([
     {
         path:"singUp",
         Component:SingUp
+    },
+    {
+        path:"sinIn",
+        Component:Sinin
     }
 
 

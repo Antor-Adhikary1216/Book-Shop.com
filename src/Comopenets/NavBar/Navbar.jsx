@@ -35,7 +35,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end gap-2">
   
-<Link to="/singUp"><button className="btn border-none shadow-none text-white text-[18px] bg-[#23BE0A]">Sign In</button></Link>
+<Link to="/sinIn"><button className="btn border-none shadow-none text-white text-[18px] bg-[#23BE0A]">Sign In</button></Link>
 <Link to="/singUp"><button className="btn  border-none shadow-none text-white text-[18px] bg-[#59C6D2] ">Sign Up</button></Link>
   </div>
 </div>
