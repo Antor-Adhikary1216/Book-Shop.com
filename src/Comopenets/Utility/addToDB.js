@@ -1,5 +1,5 @@
-
-
+ import swal from 'sweetalert';
+ 
 const addTostoreBooks=()=>{
 const data =localStorage.getItem("pageToRead");
 
@@ -13,7 +13,9 @@ const addTostoreDB=(id)=>{
 const sotoredata = addTostoreBooks()
 
 if(sotoredata.includes(id)){
-    alert("alredy Add this book")
+    swal("This Book is Alredy Added your Book List!", {
+    className: "red-bg",
+  });
 }
 else{
     sotoredata.push(id)
@@ -25,4 +27,4 @@ else{
 }
 
 
-export {addTostoreDB}
+export {addTostoreDB,addTostoreBooks}

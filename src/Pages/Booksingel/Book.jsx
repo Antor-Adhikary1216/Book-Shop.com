@@ -13,7 +13,7 @@ const Book = ({card}) => {
        <div className="card  h-120 shadow-md   p-10 ">
   <figure className='bg-[#f3f3f3] p-5 rounded-r-2xl'>
     <div className=' p-20'>
-        <img className='w-40  object-cover  '
+        <img className='w-40  object-cover'
       src={image}
       alt="" />
     </div>

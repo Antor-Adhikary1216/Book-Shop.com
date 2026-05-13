@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { addTostoreDB } from '../../Comopenets/Utility/addToDB';
-
+import swal from 'sweetalert';
 
 
 
@@ -18,6 +18,8 @@ const BookDetails = () => {
 const {image,bookName,author,tags, bookId,review,category,totalPages,yearOfPublishing,rating,publisher}=singeldata
 
 const heandeleMArks =id =>{
+swal("Book Vibe.com", "This book successfully added your book list!", "success");
+
 
     addTostoreDB(id);
 }

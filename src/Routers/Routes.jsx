@@ -24,6 +24,7 @@ export const route = createBrowserRouter([
             },
             {
                 path:"listedbook",
+                   loader:()=> fetch("../../public/booksData.json"),
                 Component:ListedBooks
             },
             {

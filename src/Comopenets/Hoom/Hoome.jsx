@@ -15,7 +15,7 @@ const Hoome = () => {
     return (
         <div>
          <Banner></Banner>
-         <BooksData fetheData={fetheData}></BooksData>
+         <BooksData  fetheData={fetheData}></BooksData>
         </div>
     );
 };
